@@ -20,6 +20,6 @@ class Dog
   end
 
   def self.print_all
-    puts "#{name}"
+    puts @@dog_names.split
   end
 end
