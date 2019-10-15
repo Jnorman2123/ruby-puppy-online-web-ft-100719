@@ -3,12 +3,10 @@
 class Dog
   attr_accessor :name
   @@all = []
-  @@dog_names = []
 
   def initialize(name)
     @name = name
     @@all << self
-    @@dog_names << name
   end
 
   def self.all
@@ -20,6 +18,6 @@ class Dog
   end
 
   def self.print_all
-    puts @@dog_names.split(" ")
+    puts name
   end
 end
